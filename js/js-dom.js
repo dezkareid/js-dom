@@ -1,0 +1,1 @@
+console.log("Este script esta importado");
