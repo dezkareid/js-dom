@@ -8,16 +8,18 @@ function init() {
 
 	var clickBoton = function (event) {
 		alert("Le diste click al botón");
-		console.log("Le diste click al botón", event.target);	
+		console.log("Le diste click al botón", event.target);
+		event.stopPropagation();	
 	};
 
 	var clickContainer = function (event) {
 		alert("Le diste click al container");
-		console.log("Le diste click al container", event.target);	
+		console.log("Le diste click al container", event.target);
+		event.stopPropagation();	
 	};
 
-	boton.addEventListener('click', clickBoton, true);
-	container.addEventListener('click', clickContainer, true);
+	boton.addEventListener('click', clickBoton);
+	container.addEventListener('click', clickContainer);
 
 	container.appendChild(boton);
 }
