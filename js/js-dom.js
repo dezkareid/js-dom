@@ -1,5 +1,6 @@
 function init() {
-	console.log("Este script se ejecutara hasta que el evento load de window haya terminado");
+	var container = document.querySelector("#container");
+	console.log(container);
 }
 
 window.addEventListener('load', init);
