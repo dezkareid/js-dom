@@ -1,1 +1,5 @@
-console.log("Este script esta importado");
+function init() {
+	console.log("Este script se ejecutara hasta que el evento load de window haya terminado");
+}
+
+window.addEventListener('load', init);
