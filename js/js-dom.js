@@ -16,8 +16,8 @@ function init() {
 		console.log("Le diste click al container", event.target);	
 	};
 
-	boton.addEventListener('click', clickBoton);
-	container.addEventListener('click', clickContainer);
+	boton.addEventListener('click', clickBoton, true);
+	container.addEventListener('click', clickContainer, true);
 
 	container.appendChild(boton);
 }
